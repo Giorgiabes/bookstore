@@ -4,7 +4,6 @@ from django.urls import path, include
 
 
 urlpatterns = [
-    
     # Django admin
     path('admin/', admin.site.urls),
     
@@ -13,4 +12,5 @@ urlpatterns = [
     
     # Local apps
     path('', include('pages.urls')),
+    path('books/', include('books.urls')),
 ]
